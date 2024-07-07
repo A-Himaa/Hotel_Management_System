@@ -1,0 +1,199 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #EFE9E6;
+}
+.image-slider {
+    width: 100vw; 
+    height: 60vh; 
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-slider .list {
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    transition: left 2s; /* Used left for smoother transitions */
+}
+
+.image-slider .list img {
+    width: 100vw; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+.image-slider .buttons {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-slider .buttons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.image-slider .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.image-slider .dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.image-slider .dots li.active {
+    width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .image-slider {
+        height: 65vh; /* Full height on smaller screens */
+    }
+
+    .image-slider .list {
+        height: 100%; /* Ensure it spans full height */
+    }
+
+    .image-slider .list img {
+        height: 100%; /* Ensure images span full height */
+    }
+}
+
+/* navigation bar */
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding-left: 0px;
+    padding-right: 40px;
+    z-index: 10;
+    background-color: rgba(23, 23, 23, 0.44);
+}
+.logo{
+    padding-left: 0px ;
+}
+
+.nav-bar ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar ul li {
+    position: relative;
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 25px;
+}
+
+.nav-bar ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 22px;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* new solid black navigation bar */
+.nav-bar2 {
+    width: 100vw;
+    height: 12vh;
+    background-color: rgb(23, 23, 23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav-bar2 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-bar2 ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.nav-bar2 ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.para-heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width */
+}
+
+.para {
+    margin: 0 auto;
+    text-align: center;
+    width: 80vw;
+    padding: 25px 25px;
+    font-family: Arial, sans-serif; /* Use a different font for body text */
+    font-size: medium;
+    line-height: 1.6; /* Improve readability */
+    padding: 10px 0; /* Optional: Add padding for vertical spacing */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
